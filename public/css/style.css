@@ -1,0 +1,21 @@
+/* Basic transition for theme changes */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Any other global styles that are not easily handled by adding classes directly in HTML.
+   For a Tailwind CDN project, this file might be very small or even empty if all styling
+   is done via utility classes in the HTML.
+   For now, we'll keep it minimal. We can add more specific global styles if needed.
+*/
+
+/* For example, if we want a default link color that is not Tailwind's default blue,
+   but still want it to be theme-aware, we could do:
+a {
+  color: #yourBrandLightLinkColor;
+}
+body.dark a {
+  color: #yourBrandDarkLinkColor;
+}
+   However, it's usually better to use Tailwind's text color utilities like text-blue-600 dark:text-blue-400 directly on the <a> tags.
+*/
